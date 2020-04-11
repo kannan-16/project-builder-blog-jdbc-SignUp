@@ -36,7 +36,11 @@ public class LoginController extends HttpServlet {
 		String email = request.getParameter("email"); //  get the email value from the jsp/html page
 		String password = request.getParameter("password"); //  get the password value from the jsp/html page
 
-		// Fill your code
+		UserDAO userdao = new UserDAO();
+		
+		User user = new User();
+		user.setEmail(email);
+		user.setPassword(password);
 		
 		boolean validateUser = userdao.loginUser(user);
 		if(validateUser) {

@@ -1,3 +1,5 @@
 package businesslogic;
 
-//Type your code
+class RegistrationValidation {
+	
+}
